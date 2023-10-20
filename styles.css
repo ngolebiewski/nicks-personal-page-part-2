@@ -165,7 +165,10 @@ padding-right: 1em;
   align-items: flex-start;
   flex-direction: column;
   width: 40%;
- 
+}
+
+#photo>img {
+  width:100%;
 }
 
 /* ************************************************* */
@@ -218,12 +221,6 @@ section>article:nth-child(2) {
 .portfolio>section:nth-child(even) {
   background-color: #edeef2;
 }
-
-
-/* article {
-  border-bottom: thin solid #1d20ea;
-} */
-
 
 
 /* ************************************************* */
@@ -297,7 +294,7 @@ footer>div>a>img {
 @media screen and (max-width: 1000px) {
   * {
     background-color: black;
-    color: white;
+    color: white !important;
     background: black;
     background-image: black;
     }
@@ -357,7 +354,7 @@ footer>div>a>img {
     padding-right: 1em;
     border-right: none;
     margin-bottom: 20px;
-    width: 50%;
+    width: 100%;
     border-bottom: 1px solid white;
   }
   .about>section {
@@ -379,6 +376,9 @@ footer>div>a>img {
   padding-right: 0;
   border-bottom: 1px solid white;
   }
+
+  .home>section>section:nth-child(2) {
+    width: 100%;
 
 }
 
