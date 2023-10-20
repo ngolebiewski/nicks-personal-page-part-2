@@ -7,8 +7,6 @@ body {
 /* ************************************************* */
 header {
   display: flex;
-    /* padding: 0 0 20px 10px; */
-    background-color: #1d20ea;
     background-image: linear-gradient(to right, #1d20ea, #5b1ed5);
     margin-bottom: 10px;
     flex-direction: column;
@@ -78,9 +76,6 @@ h2 {
   margin-top: 0px;
 }
 
-body>section {
-  border: none;
-}
 
 a:link, a:focus, a:visited {
   color:#046f24;
@@ -90,20 +85,59 @@ a:hover {
 }
 section {
   display: flex;
-  
-  
-
+  flex-direction: column;
+  align-items: center;
 }
 
-
-/* a:link, a:hover, a:focus, a:visited {
-  color:#34356D;
-} */
 .caption {
   font-style: italic;
   color:#34356D;
   font-size: .7em;
 }
+
+/* ************************************************* */
+/* PORTFOLIO                                         */
+/* ************************************************* */
+
+.portfolio>section {
+  display: flex;
+  width: 80%;
+  align-items: flex-start;
+  border-bottom: 2px dotted #1d20ea;
+}
+
+li {
+  margin-bottom: .5em;
+}
+
+#photo {
+  list-style: none;
+}
+
+.tech {
+  font-style: italic;
+}
+
+.screenshot {
+  display: flex;
+  margin-right: 30px;
+  margin-bottom: 30px;
+  border-bottom: none;
+}
+
+.screenshot>img {
+  max-width:100%;
+  border: 2px solid #1d20ea;
+  border-radius: 10px;
+  padding: 5px;
+}
+
+
+
+/* ************************************************* */
+/* TKTK AREA                                         */
+/* ************************************************* */
+
 
 
 .wow_photo>img {
@@ -134,36 +168,6 @@ article {
   font-size: 1.4em;
   font-style: italic;
   color: #1d20ea;
-}
-
-li {
-  margin-bottom: .5em;
-}
-
-#photo {
-  list-style: none;
-}
-
-.tech {
-  font-style: italic;
-}
-
-.screenshot {
-  display: inline-block;
-  margin-right: 30px;
-  margin-bottom: 30px;
-  border-bottom: none;
-}
-
-.screenshot>img {
-  max-width:500px;
-  border: 2px solid #1d20ea;
-  border-radius: 10px;
-  padding: 5px;
-}
-
-.portfolio {
-  border-bottom: 2px dotted #1d20ea; ;
 }
 
 /* ************************************************* */
@@ -213,7 +217,7 @@ footer {
   padding: 20px;
   flex-direction: row;
   align-items: center;
-  position: absolute;
+  /* position: absolute; */
   justify-content: center;
   width: 100%;
   bottom: 0;
@@ -230,6 +234,30 @@ footer>div>a>img {
   width: 40px;
 }
 
+/* ************************************************* */
+/* Small Screens                                     */
+/* ************************************************* */
+
+@media screen and (max-width: 600px) {
+  * {
+    background-color: black;
+    color: white;
+    background: black;
+    background-image: black;
+    }
+
+  footer{
+    background-image: none;
+  }
+
+  header{
+    background-image: none;
+  }
+  
+  .quote {
+    color:greenyellow;
+  }
+}
 
 /* ************************************************* */
 /* Nick - https://github.com/ngolebiewski                               */
