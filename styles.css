@@ -106,26 +106,67 @@ section {
   color: #1d20ea;
 }
 
+.quote:hover {
+  transition-duration: 1s;
+  color: darkorange;
+}
+
 /* ************************************************* */
 /* ABOUT                                             */
 /* ************************************************* */
 
+.about>section {
+  display: flex;
+  width: 80%;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-content: stretch;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.about>section>article {
+  width: 47%;
+}
+
+.about>section>article:nth-child(1){
+border-right: 2px solid #1d20ea;
+padding-right: 1em;
+}
 
 /* ************************************************* */
 /* HOME                                              */
 /* ************************************************* */
-.wow_photo>img {
-  width: 400px;
+.home>section {
+  display: flex;
+  width: 80%;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-content: stretch;
+  justify-content: space-between;
+  align-items: flex-start;
 }
 
-.left {
-  display: inline-block;
-  max-width: 500px;
-  border: 2px solid #1d20ea;
-  border-radius: 10px;
+#wowPhoto{
+  display: flex;
+  align-items: flex-start;
+  padding-right: 1em;
+  border-right: 2px solid #1d20ea;
   margin-right: 20px;
+  width: 50%;
 }
 
+#wowPhoto>img {
+  width: 100%;
+}
+
+.home>section>section:nth-child(2) {
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+  width: 40%;
+ 
+}
 
 /* ************************************************* */
 /* PORTFOLIO                                         */
@@ -298,6 +339,45 @@ footer>div>a>img {
     border: 1px solid white;
     border-radius: 10px;
     padding: 5px;
+  }
+
+  .home>section {
+    display: flex;
+    width: 80%;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: stretch;
+    justify-content: space-between;
+    align-items: flex-start;
+  }
+
+  #wowPhoto{
+    display: flex;
+    align-items: flex-start;
+    padding-right: 1em;
+    border-right: none;
+    margin-bottom: 20px;
+    width: 50%;
+    border-bottom: 1px solid white;
+  }
+  .about>section {
+    display: flex;
+    width: 80%;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: stretch;
+    justify-content: space-between;
+    align-items: flex-start;
+  }
+  
+  .about>section>article {
+    width: 100%;
+  }
+  
+  .about>section>article:nth-child(1){
+  border-right: none;
+  padding-right: 0;
+  border-bottom: 1px solid white;
   }
 
 }
