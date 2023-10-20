@@ -66,8 +66,10 @@ nav>a:hover {
   padding: 2px;
 }
 
+
+
 /* ************************************************* */
-/* BODY AREA                                       */
+/* BODY AREA                                         */
 /* ************************************************* */
 
 
@@ -76,20 +78,23 @@ h2 {
   margin-top: 0px;
 }
 
-
-
 body>section {
   border: none;
 }
 
-section {
-  a:link, a:focus, a:visited {
-    color:#046f24;
-  }
-  a:hover {
-    color:#315dee
-  }
+a:link, a:focus, a:visited {
+  color:#046f24;
 }
+a:hover {
+  color:#315dee
+}
+section {
+  display: flex;
+  
+  
+
+}
+
 
 /* a:link, a:hover, a:focus, a:visited {
   color:#34356D;
@@ -162,6 +167,43 @@ li {
 }
 
 /* ************************************************* */
+/* FORM STYLIN'                                      */
+/* ************************************************* */
+.form {
+  display: flex;
+  justify-content: center;
+  border: 2px dotted #1d20ea; ;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+form>div {
+  display: flex;
+  align-items: baseline;
+}
+
+label {
+  display: flex;
+  margin: 10px 0 5px 0;
+
+}
+
+input {
+  margin-bottom: 20px;
+  width: 300px;
+  height: 2em;
+}
+
+form :nth-child(9) {
+  margin-top: 15px;
+  width: 100px;
+}
+
+
+/* ************************************************* */
 /* FOOTER AREA                                       */
 /* ************************************************* */
 footer {
@@ -187,3 +229,8 @@ footer>div {
 footer>div>a>img {
   width: 40px;
 }
+
+
+/* ************************************************* */
+/* Nick - https://github.com/ngolebiewski                               */
+/* ************************************************* */
